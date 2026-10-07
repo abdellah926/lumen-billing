@@ -29,7 +29,6 @@ export function Lightbox({
   const item = items[index];
   const stageRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
-  const originRef = useRef<DOMRect | null>(null);
   const restoreRef = useRef<Element | null>(null);
 
   const open = items.length > 0 && index >= 0 && index < items.length;
